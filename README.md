@@ -14,7 +14,9 @@ Ce document décrit l'architecture et la configuration d'un docker compose produ
 
 ## Prérequis
 
-Docker compose (https://docs.docker.com/compose/install/)
+Kubectl
+
+Helm Charts
 
 ## Arborescence
 
@@ -24,22 +26,22 @@ Docker compose (https://docs.docker.com/compose/install/)
 └── elk
     ├── elasticsearch 
     │   ├── .gitkeep
-    │   └──  haproxy.cfg #configuration haproxy
+    │   └──  values.yml
     ├── filebeat
     │   ├── .gitkeep
-    │   └──  haproxy.cfg #configuration haproxy
+    │   └──  values.yml
     ├── kibana
     │   ├── .gitkeep
-    │   └──  haproxy.cfg #configuration haproxy
+    │   └──  values.yml
     ├── logstash
     │   ├── .gitkeep
-    │   └──  haproxy.cfg #configuration haproxy
+    │   └──  values.yml
     └── README.md
 ```
 ## Installation
 
 1. Copier le repo
-2. Modifier le .env en fonction de l'adressage ip
+2. Modifier les fichier values.yml en fonction de vos besoins
 
 ## Utilisation
 
