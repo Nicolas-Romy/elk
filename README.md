@@ -21,13 +21,19 @@ Docker compose (https://docs.docker.com/compose/install/)
 ``` text
 
 .
-└── Wordpress
-    ├── haproxy #load balancer
+└── elk
+    ├── elasticsearch 
     │   ├── .gitkeep
     │   └──  haproxy.cfg #configuration haproxy
-    ├── .env #fichier de variables pour docker-compose.yml
-    ├── .gitkeep
-    ├── docker-compose.yml #compose contenant le haproxy & les 3 conteneurs Wordpress
+    ├── filebeat
+    │   ├── .gitkeep
+    │   └──  haproxy.cfg #configuration haproxy
+    ├── kibana
+    │   ├── .gitkeep
+    │   └──  haproxy.cfg #configuration haproxy
+    ├── logstash
+    │   ├── .gitkeep
+    │   └──  haproxy.cfg #configuration haproxy
     └── README.md
 ```
 ## Installation
