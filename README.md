@@ -52,4 +52,4 @@ Helm Charts
 3. installer elasticsearch (`helm upgrade --install elk-elasticsearch elastic/elasticsearch -n elk -f ./elasticsearch/values.yml`)
 4. installer kibana (`helm upgrade --install elk-kibana elastic/kibana -n elk -f ./kibana/values.yml`)
 5. installer logstash (`helm upgrade --install elk-logstash elastic/logstash -n elk -f ./logstash/values.yml`)
-6.  installer filebeat (`helm upgrade --install elk-elasticsearch elastic/filebeat -n elk -f ./filebeat/values.yml`)
+6.  installer filebeat (`helm upgrade --install elk-filebeat elastic/filebeat -n elk -f ./filebeat/values.yml`)
